@@ -6,7 +6,7 @@
 /*   By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 23:04:14 by fredchar          #+#    #+#             */
-/*   Updated: 2025/08/18 15:34:58 by fredchar         ###   ########.fr       */
+/*   Updated: 2025/08/18 15:37:06 by fredchar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,6 @@ static bool is_str_alpha(const std::string &s) {
 	}
 	return (true);
 }
-
-// static bool is_str_num(const std::string &s) {
-// 	for (char c : s) {
-// 		if (!std::isalpha(static_cast<char>(c))) {
-// 			return (false);
-// 		}
-// 	}
-// 	return (true);
-// }
 
 static std::string prompt_field(const std::string &field_name) // const promises I won't change it and &is speed+++ because we avoid copying!
 {
