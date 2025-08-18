@@ -6,13 +6,13 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/08/10 21:43:12 by fredchar         ###   ########.fr        #
+#    Updated: 2025/08/18 16:46:17 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := megaphone
-CC := gcc
-CFLAGS := -Wall -Wextra -Werror -g -pthread
+NAME := PhoneBook
+CC := g++
+CFLAGS := -Wall -Wextra -Werror -g -std=c++11
 OBJD := obj
 
 # Colors
@@ -23,11 +23,11 @@ NC := \033[0m # No Color
 
 SRCS :=			megaphone.cpp \
 
-OBJS := $(SRCS:%.c=$(OBJD)/%.o)
+OBJS := $(SRCS:%.cpp=$(OBJD)/%.o)
 
 all: $(NAME)
 
-$(OBJD)/%.o: %.c|  $(OBJD)
+$(OBJD)/%.o: %.cpp | $(OBJD)
 	@printf "$(YELLOW)Compiling $<...$(NC)\n"
 	@$(CC) $(CFLAGS) -I . -c $< -o $@
 	@printf "$(GREEN)Compiled $< successfully!$(NC)\n"
