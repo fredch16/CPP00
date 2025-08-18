@@ -6,13 +6,13 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/08/12 23:55:54 by fredchar         ###   ########.fr        #
+#    Updated: 2025/08/18 15:29:37 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := PhoneBook
 CC := g++
-CFLAGS := -Wall -Wextra -Werror -g -std=c++98
+CFLAGS := -Wall -Wextra -Werror -g -std=c++11
 OBJD := obj
 
 # Colors

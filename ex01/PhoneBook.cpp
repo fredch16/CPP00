@@ -6,7 +6,7 @@
 /*   By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 23:04:14 by fredchar          #+#    #+#             */
-/*   Updated: 2025/08/15 00:52:03 by fredchar         ###   ########.fr       */
+/*   Updated: 2025/08/18 15:34:58 by fredchar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,24 @@
 #include <iomanip>
 
 PhoneBook::PhoneBook() : contact_count(0), oldest_index(0) {}
+
+static bool is_str_alpha(const std::string &s) {
+	for (char c : s) {
+		if (!std::isalpha(static_cast<char>(c))) {
+			return (false);
+		}
+	}
+	return (true);
+}
+
+// static bool is_str_num(const std::string &s) {
+// 	for (char c : s) {
+// 		if (!std::isalpha(static_cast<char>(c))) {
+// 			return (false);
+// 		}
+// 	}
+// 	return (true);
+// }
 
 static std::string prompt_field(const std::string &field_name) // const promises I won't change it and &is speed+++ because we avoid copying!
 {
@@ -27,9 +45,17 @@ static std::string prompt_field(const std::string &field_name) // const promises
 			std::cout << "\nAborted ADD due to EOF\n";
 			return "";
 		}
-		if (!input.empty())
-			return input;
-		std::cout << "Field cannot be empty. Try again.\n";
+		if (input.empty())
+		{
+			std::cout << "Field cannot be empty. Try again.\n";
+			continue;
+		}
+		if (!is_str_alpha(input) && (field_name == "First Name" || field_name == "Last Name"))
+		{
+			std::cout << "Field must be strictly alphabetic characters. Try again\n";
+			continue ;
+		}
+		return (input);
 	}
 }
 
