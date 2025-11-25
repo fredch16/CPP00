@@ -6,12 +6,12 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/08/18 15:29:37 by fredchar         ###   ########.fr        #
+#    Updated: 2025/11/25 16:53:58 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := PhoneBook
-CC := g++
+CC := c++
 CFLAGS := -Wall -Wextra -Werror -g -std=c++11
 OBJD := obj
 

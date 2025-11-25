@@ -6,12 +6,12 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/10/08 16:53:38 by fredchar         ###   ########.fr        #
+#    Updated: 2025/11/25 16:53:47 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := megaphone
-CC := g++
+CC := c++
 CFLAGS := -Wall -Wextra -Werror -g -std=c++11
 OBJD := obj
 
