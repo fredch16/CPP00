@@ -6,11 +6,11 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/08/18 21:13:12 by fredchar         ###   ########.fr        #
+#    Updated: 2025/10/08 16:53:38 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := PhoneBook
+NAME := megaphone
 CC := g++
 CFLAGS := -Wall -Wextra -Werror -g -std=c++11
 OBJD := obj
@@ -21,7 +21,7 @@ YELLOW := \033[0;33m
 RED := \033[0;31m
 NC := \033[0m # No Color
 
-SRCS :=			megaphone.cpp \
+SRCS :=	megaphone.cpp
 
 OBJS := $(SRCS:%.cpp=$(OBJD)/%.o)
 

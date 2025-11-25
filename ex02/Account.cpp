@@ -6,7 +6,7 @@
 /*   By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 01:10:59 by fredchar          #+#    #+#             */
-/*   Updated: 2025/08/15 03:44:42 by fredchar         ###   ########.fr       */
+/*   Updated: 2025/11/25 16:12:09 by fredchar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,7 @@
 #include <iostream>
 
 
-Account::Account(int inital_deposit)
-	: _accountIndex(_nbAccounts),
-	_amount(inital_deposit),
-	_nbDeposits(0),
-	_nbWithdrawals(0)
+Account::Account(int inital_deposit) : _accountIndex(_nbAccounts), _amount(inital_deposit), _nbDeposits(0), _nbWithdrawals(0)
 {
 	_nbAccounts++;
 	_totalAmount += inital_deposit;
@@ -66,7 +62,7 @@ int Account::getNbWithdrawals(void)
 }
 
 void Account::_displayTimestamp(void) {
-	std::time_t now = std::time(nullptr);
+	std::time_t now = std::time(NULL);
 	std::tm *ltm = std::localtime(&now);
 
 	std::cout	<< '['

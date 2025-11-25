@@ -6,13 +6,13 @@
 #    By: fredchar <fredchar@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 16:31:00 by fredchar          #+#    #+#              #
-#    Updated: 2025/08/15 03:43:56 by fredchar         ###   ########.fr        #
+#    Updated: 2025/08/19 18:36:23 by fredchar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := BankchesterUnited
 CC := g++
-CFLAGS := -Wall -Wextra -Werror -g -std=c++17
+CFLAGS := -Wall -Wextra -Werror -g -std=c++98
 OBJD := obj
 
 # Colors
